@@ -1,0 +1,12 @@
+Conditionals-1: What is a conditional statement? Can you think of a conditional statement in real life?
+
+Conditionals-2: Using the guesses that we asked the user for above, we want to check if the user guessed correctly!
+First we'll check if the user guessed a dog. If the animal they guessed was a dog, tell the user "Dogs rule!"
+
+Conditionals-3,4,5,6: Next, let’s tell the user whether they got the right answer of a black cat! Print “Correct answer!”
+if the guessed animal is a cat and the guessed color is black, print “Almost there!” if the guessed animal is a cat or the guessed color is black,
+and print “Incorrect answer :( ” if the user guessed neither correctly.
+
+Conditionals-7: Do you remember what a nested if statement is? How would you change part of the above problem to include a nested if statement?
+Print “Correct answer!” if the animal is a black cat, print “Right color! Wrong animal!” if the user guessed black as the color but the wrong animal,
+print “Right animal! Wrong color!” if the user guessed cat but a color that isn't black, and print “Incorrect answer :(“ if the user guessed neither correctly.
