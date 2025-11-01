@@ -1,0 +1,35 @@
+Let's create a chatbot we can talk to! We are going to program the computer to ask different questions and respond appropriately to the user's response.
+
+For example, the chatbot can start by asking, "What is your name?" and respond by saying, "Nice to meet you, [name]!"
+
+The chatbot can also ask, "What is your favorite food?" and respond by saying, "Aw man, I'm allergic to [food]!
+
+Program your chatbot to ask and respond to at least five questions.
+
+
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+
+    System.out.print("What is your name? ");
+    String name = in.nextLine();
+    System.out.println("Nice to meet you, " + name + "! My name is Bob.");
+
+    System.out.print("What is your favorite food? ");
+    String food = in.nextLine();
+    System.out.println("Aw man, I'm allergic to " + food + ". :(");
+
+    System.out.print("What's the best movie you've seen lately? ");
+    String movie = in.nextLine();
+    System.out.println("Cool, I'll add that one to my list!");
+
+    System.out.print("Who is your favorite celebrity? ");
+    String celeb = in.nextLine();
+    System.out.println("You won't believe this, but I just met " + celeb + " last week!");
+
+    System.out.println("See you next time!");
+  }
+}
