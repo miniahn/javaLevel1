@@ -1,0 +1,9 @@
+Methods-1: What is a method? Can you give me an example of a built-in method in Java?
+
+Methods-2,3,4: Define a method that takes in two integers and returns the sum of those two integers.
+
+Methods-2,3,4: Define a method that "flips" a coin. In the method, create a random double between 0 and 1. If the double is 0.5 or above, return "Heads". If the double is less than 0.5, return "Tails".
+
+Methods-5: Using the sum method that you wrote, print the sum of 36 and 59.
+
+Methods-5: Using the coinFlip method you wrote, simulate flipping a coin 100 times and print out "You flipped heads __ times out of 100!"
