@@ -1,0 +1,8 @@
+Loops are a way for us to repeat the same piece of code. Show the student an example of a for loop: for (int i = 0; i <= 10; i++) { System.out.println(i); }.
+
+The first part is the initialization condition (int i = 0), which sets up our loop variable.
+The second part is the termination condition (i <= 10), which must continue to be true for the loop to continue.
+The third part is the update statement (i++), which updates our variable every time we run through the loop.
+
+Help the student build an understanding of each part of the loop by changing the numbers and the termination condition.
+How would we only print the numbers up to 5? What about up to 20? How would we start counting at 10? How would we count by 2s? How would we count backward?
