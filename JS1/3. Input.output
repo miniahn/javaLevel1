@@ -1,0 +1,9 @@
+We've already learned how to print things out in Java, but what if we want to get input from the user? There are four steps:
+First, we import the Scanner class to help us, by adding import java.util.Scanner; to the top of our program.
+
+Then, we create our Scanner variable. Inside our main code, we can create a variable called in with Scanner in = new Scanner(System.in);. This means our Scanner is going to be using the input typed into the console.
+
+Next, we ask our user the question we want to answer by using System.out.print("What is your name? ");. Notice that if we use System.out.print() instead of println(),
+and we add a space to the end of our question string, we can type in the answer right next to the question.
+
+Finally, we get the answer by creating a string and storing it: String answer = in.nextLine();.
