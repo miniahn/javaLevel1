@@ -1,0 +1,28 @@
+Primitive types in Java are built-in data types that can be stored inside variables. The four primitive types we will discuss today are int, double, char, and boolean.
+
+An int is an integer. Have the student initialize an int variable with int x = 5;. Notice that every time we create a new variable in Java, we have to start with its type, but we don't have to state the type when we use the variable again.
+Then, have the student print out the value of the variable: System.out.println(x);.
+
+A double is a decimal number. Have the student initialize a double with double y = 3.0;. Then, have the student print out the value of the variable: System.out.println(y);. Notice that every line of code in Java must end in a semicolon!
+
+A char is a character, like a letter, number, or punctuation. Have the student initialize a char with char z = 'a';. Then, have the student print out the value of the variable: System.out.println(z);. Note that in Java, chars are wrapped in single quotes.
+
+A boolean stores either true or false. Have the student initialize a boolean with boolean isCold = false;. Then, have the student print out the value of the variable: System.out.println(isCold);.
+
+
+
+class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x);
+
+    double y = 2.0;
+    System.out.println(y);
+
+    char z = 'a';
+    System.out.println(z);
+
+    boolean isCold = false;
+    System.out.println(isCold);
+  }
+}
