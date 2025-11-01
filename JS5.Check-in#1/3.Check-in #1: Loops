@@ -1,0 +1,13 @@
+Loops-1: What is a loop? What do we use loops for?
+
+Loops-2: What is the difference between a for loop and a while loop?
+
+Loops-3: Print the numbers 0 to 9 using a for loop. Print the numbers 20 to 10 using a for loop. Print all of the even numbers between 12 and 28 using a for loop.
+
+Loops-4: Print the numbers from 0 to 20 using a while loop. Print the even numbers from 34 to 10 using a while loop
+
+Loops-5: How do we know when to use nested loops?
+
+Loops-6: Use nested loops to print out a 5x5 multiplication table.
+
+Loops-7: In the nested loops you just wrote, how many total times does the inner print statement run?
