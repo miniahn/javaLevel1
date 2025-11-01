@@ -1,0 +1,65 @@
+Ask the user for a row and column number (this code has been provided in the starter project).
+Print out a grid where there are O’s filling the rows and columns specified by the user’s input, but an X at the entered coordinate.
+The rows and columns are not zero-indexed, meaning that the first row is row 1, not row 0.
+
+For example, if the user entered 7 and 2, the output should look like this:
+-O--------
+-O--------
+-O--------
+-O--------
+-O--------
+-O--------
+OXOOOOOOOO
+-O--------
+-O--------
+-O--------
+
+In this project, the student will need to check multiple conditions to determine which symbol to print. This can be accomplished by using && and ||, or by using nested conditional statements.
+
+
+
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    // Get the coordinate from the user
+    Scanner in = new Scanner(System.in);
+    System.out.print("\nPlease input a number from 1 to 10: ");
+    int row = in.nextInt();
+    System.out.print("Enter another number from 1 to 10: ");
+    int col = in.nextInt();
+
+    // Put an "O" if in the same row and column, but put an "X" at the entered coordinate
+    for (int i = 1; i <= 10; i++) {
+      for (int j = 1; j <= 10; j++) {
+        if (i == row && j == col) {
+          System.out.print("X");
+        } else if (i == row || j == col) {
+          System.out.print("O");
+        } else {
+          System.out.print("-");
+        }
+      }
+      System.out.println();
+    }
+
+    /* 
+    // An alternative for students that are uncomfortable with using complex conditionals
+    for (int i = 1; i <= 10; i++) {
+      for (int j = 1; j <= 10; j++) {
+        if (i == row) {
+          if (j == col) {
+            System.out.print("X");
+          } else {
+            System.out.print("O");
+          }
+        } else if (j == col) {
+          System.out.print("O");
+        } else {
+          System.out.print("-");
+        }
+      }
+      System.out.println();
+    }
+    */
+  }
+}
