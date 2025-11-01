@@ -1,0 +1,31 @@
+This is an optional practice project provided to the instructor in case you need extra material during the check-in, or would like something to assign for homework.
+It includes all of the topics covered during the Check-In except for 2D arrays. You can also assign a supplemental project from one of the modules covered in this review session.
+
+Create an empty integer array of size 10. For each entry in the array, assign a random integer between 0 and 10.
+Write a method countNumElementsAboveFive() that takes in an integer array and returns how many of its elements are above 5.
+Pass in your array into the method you write and print the results to the console.
+
+Though not required for the project, you may suggest to your student to print out the elements of the array so that it is easier to verify that the correct answer was obtained.
+
+
+
+class Main {
+  public static void main(String[] args) {
+    int[] arr = new int[10];
+    for (int i = 0; i < arr.length; i++) {
+      arr[i] = (int)(Math.random() * 10);
+    }
+    
+    System.out.println(countNumElementsAboveFive(arr));
+  }
+
+  public static int countNumElementsAboveFive(int[] a) {
+    int count = 0;
+    for (int i = 0; i < a.length; i++) {
+      if (a[i] > 5) {
+        count++;
+      }
+    }
+    return count;
+  }
+}
