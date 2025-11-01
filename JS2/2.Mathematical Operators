@@ -1,0 +1,12 @@
+Reference Code: https://replit.com/@JuniLearning/JS2-Math-Operators-Reference#Main.java
+  Have the student create a Custom Project (a blank project) to store their reference code for the topics you are about to introduce. 
+  
+Arithmetic operators allow us to perform operations like addition, subtraction, multiplication, and division on numbers. Expressions are read from left to right with traditional order of operations.
+  Remind the student that parentheses take precedence by having them print the value of 5 + (6 / 3)
+  Have the student print 5 + 6 / 3 to remind them that *, /, and % have precedence over + and -
+  Have the student evaluate 5 * 6 + 7 / 9 + 3 - 2 on paper, and then validate their guess by printing the answer.
+
+%: This is called the modulus operator, or mod. It returns the remainder when two numbers are divided.
+  Have the student print 5 % 3 and 4 % 2.
+  
+= : The single equals sign is the assignment operator. As we have seen, this means that the expression on the left hand side of the equals will be set to the right hand side after evaluation.
