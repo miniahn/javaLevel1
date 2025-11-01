@@ -1,0 +1,26 @@
+Write a method called isPalindrome() which takes in a string and returns true if the string is a palindrome and false if it not.
+A palindrome is a word that reads the same backward as forward. Here are some examples:
+isPalindrome(“racecar”) -> true
+isPalindrome(“yes”) -> false
+isPalindrome(“a”) -> true
+isPalindrome(“”) -> true
+
+
+
+class Main {
+  public static void main(String[] args) {
+    System.out.println(isPalindrome("yes"));
+		System.out.println(isPalindrome("racecar"));
+		System.out.println(isPalindrome("b"));
+		System.out.println(isPalindrome(""));
+  }
+
+	public static boolean isPalindrome(String str) {
+		for(int i = 0; i < str.length()/2; i++) {
+			if(str.charAt(i) != str.charAt(str.length()-1-i)) {
+				return false;
+			}
+		}
+		return true;
+	}
+}
