@@ -1,0 +1,28 @@
+Ask the user for a word and then print out the first, middle, and last characters!
+
+Instructor Note: This project focuses on the charAt() method. If you'd also like to practice with substrings,
+a great extension would be to print out three different strings that modify the original word: one with the first letter removed,
+one with the middle letter removed, and one with the last letter removed!
+
+
+
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("\nI'll print out the first, middle, and last characters!");
+    System.out.print("Enter a word: ");
+    String word = scanner.nextLine();
+    int midpoint = word.length()/2;
+
+    System.out.print("First-Middle-Last: ");
+    System.out.print(word.charAt(0) + "-");
+    System.out.print(word.charAt(midpoint) + "-");
+    System.out.print(word.charAt(word.length()-1));
+    System.out.println("");
+
+  }
+}
