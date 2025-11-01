@@ -1,0 +1,70 @@
+Prompt the user to enter two primary colors. Make sure that they enter either red, yellow, or blue! If they don't enter a valid color, print an error message and end the program.
+If both colors are valid, print the color you get when you mix them together!
+
+Use the logical OR operator (||) to validate the user input. You will need to teach your student about the NOT operator (!) to do this properly.
+
+Help your student use the logical AND operator (&&) to check for certain combinations of colors. Make sure to think about reverse cases (red and blue or blue and red),
+and cases when the colors are the same (red and red)!
+
+
+
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    boolean isValid;
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("\nPrimary Color Mixer");
+    System.out.println("Enter red, yellow, or blue:");
+
+    //GET COLORS:
+    //get color 1
+    String color1;
+    System.out.print("\nColor 1: ");
+    color1 = scanner.nextLine();
+    isValid = color1.equals("red") || 
+              color1.equals("yellow") || 
+              color1.equals("blue");
+    if(!isValid){
+      System.out.println("\nInvalid input...\nPlease try again!\n");
+      return;
+    }
+
+    //get color 2
+    String color2;
+    System.out.print("Color 2: ");
+    color2 = scanner.nextLine();
+    isValid = color2.equals("red") || 
+              color2.equals("yellow") || 
+              color2.equals("blue");
+    if(!isValid){
+      System.out.println("\nInvalid input...\nPlease try again!\n");
+      return;
+    }
+
+    System.out.println();
+    //same color
+    if(color1.equals(color2)){
+      System.out.println(color1);
+
+    //color1 = red
+    }else if(color1.equals("red") && color2.equals("yellow")){
+      System.out.println("orange");
+    }else if(color1.equals("red") && color2.equals("blue")){
+      System.out.println("purple");
+
+    //color1 = yellow
+    }else if(color1.equals("yellow") && color2.equals("red")){
+      System.out.println("orange");
+    }else if(color1.equals("yellow") && color2.equals("blue")){
+      System.out.println("green");
+
+    //color1 = blue
+    }else if(color1.equals("blue") && color2.equals("red")){
+      System.out.println("purple");
+    }else if(color1.equals("blue") && color2.equals("yellow")){
+      System.out.println("green");
+    }
+    System.out.println();
+  }
+}
