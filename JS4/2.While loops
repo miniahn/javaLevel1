@@ -1,0 +1,11 @@
+A while loop repeats the code inside of it until its condition is no longer true. Show the student an example of a while loop: int i = 0; while (i <= 10) { System.out.println(i); i++; }.
+
+Just like with a for loop, we usually have to create a loop variable first. Then, we update this variable inside of the while loop to help us know when the loop should end.
+
+Again, help the student build an understanding of each part of the loop by changing the numbers and the condition.
+  How would we only print the numbers up to 5?
+  What about up to 20?
+  How would we start counting at 10?
+  How would we count by 2s? How would we count backward?
+
+A while (true) {...} loop continues to repeat until there is a break statement in the body. Show the student how to print the numbers 0 to 10 using this type of while loop.
