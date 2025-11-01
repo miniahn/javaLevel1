@@ -1,0 +1,25 @@
+Today, we're going to learn how to use Java to generate a random number or letter. Have the student print out the result of Math.random().
+What do you think this does? It always picks a number between 0 and 1. (To be specific, it is inclusive of 0 but exclusive of 1, which means it will never print out 1 exactly.)
+
+What if we want a random number between 0 and 10? What should we do to the result of Math.random()? We should multiply it by 10.
+
+What if we want the number to always be an integer? Show the student how to use (int) to cast (or convert) our number to an integer.
+
+What if we want a random number between 5 and 15? What should we do to the result of (int)(Math.random()*10)? We should add 5 to it.
+
+Use what we have just learned (and loops) to print out ten random integers between 0 and 20.
+
+Now, print out five random integers between 1000 and 2000. Make up more similar exercises for the student as necessary.
+
+In order to learn about how to generate random letters, we have to learn about ASCII. ASCII is a language in which every possible letter (or character) is represented by a number.
+This standard ensures that computers can communicate to each other about characters properly. You can show the student an ASCII table online.
+For example, the letter a is 97 in ASCII, the letter A is 65, and the character space is 32.
+
+This means in order to generate a random lowercase letter, we have to generate a random integer between 97 (which is ASCII for a)
+and 122 (which is ASCII for z). Have the student write the code to do this and store the integer in a variable.
+
+Now, we just need to cast that number to a char, just like how we learned to cast to an integer.
+
+Use what we have just learned (and loops) to print out five random lowercase letters.
+
+Write a program that prints out 100 random 3-letter "words" (which are just random combinations of random letters). It will be fun to see how many of these form real words!
