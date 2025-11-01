@@ -1,0 +1,7 @@
+onditional statements are if... else if... else statements. Show the student an example, and explain how only one code path can be chosen.
+
+The conditions inside conditional statements involve these operators: ==, !=, >, <, >=, and <=. Make sure the student understands what these operators mean.
+
+Multiple conditions can be combined with ! (not), && (and), and || (or). Try writing some examples with the student. Note that && has precedence over ||.
+
+Note that for strings specifically, we do not use str1 == str2 to compare strings. Instead, we use str1.equals(str2).
