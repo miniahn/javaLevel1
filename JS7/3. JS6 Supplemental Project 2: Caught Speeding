@@ -1,0 +1,36 @@
+You just got pulled over on the highway! Write a method that takes in the speed you were going and a boolean that represents if it is your birthday today.
+Your method should return "No ticket!" or "Small ticket!" or "Big ticket!" Here are the rules: if you were driving at a speed less than or equal to 65 mph, then you don’t get a ticket.
+If you were driving in between 65 and 80 mph, you get a small ticket. If you were driving at above 80 mph, then you get a big ticket.
+
+However, if it is your birthday that day, your ticket level gets dropped by one level. For example, if it’s your birthday and you would be getting a big ticket, then you get a small ticket.
+
+
+
+class Main {
+  public static void main(String[] args) {
+    // test cases
+    System.out.println(caughtSpeeding(66, true));
+    System.out.println(caughtSpeeding(60, false));
+    System.out.println(caughtSpeeding(85, true));
+    System.out.println(caughtSpeeding(85, false));
+  }
+
+  public static String caughtSpeeding(int speed, boolean isBirthday) {
+    if(speed <= 65) {
+      return "No ticket!";
+    }
+
+    if(isBirthday) {
+      if(speed <= 80) {
+        return "No ticket!";
+      }
+      return "Small ticket!";
+
+    } else {
+      if(speed <= 80) {
+        return "Small ticket!";
+      }
+      return "Big ticket!";
+    }
+  }
+}
