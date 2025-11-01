@@ -1,0 +1,44 @@
+1. Write a program that prints the numbers 1 through 50.
+  However, the program should print "Fizz" instead of the number if the number is a multiple of 3,
+  and "Buzz" if the number is a multiple of 5. If it is a multiple of 3 and 5,
+  the program should print "FizzBuzz." (You may need to show the student how to use the mod (%) operator.)
+
+2. Write a program that creates an integer variable called x and prints out all of the factors of x.
+  Your program should work no matter what value x is set to, up to 1000. (You may have to review with your student what a factor of a number means.)
+  
+3. Write a program that creates a String variable called word and prints out the word in reverse. Your program should work no matter what word word is set to.
+
+
+
+class Main {
+  public static void main(String[] args) {
+    // 1. Fizzbuzz
+    for (int i = 1; i <= 50; i++) {
+      if (i % 3 == 0 && i % 5 == 0) {
+        System.out.println("Fizzbuzz");
+      } else if (i % 3 == 0) {
+        System.out.println("Fizz");
+      } else if (i % 5 == 0) {
+        System.out.println("Buzz");
+      } else {
+        System.out.println(i);
+      }
+    }
+
+    // 2. Factors
+    int x = 100;
+    for (int i = 1; i <= x; i++) {
+      if (x % i == 0) {
+        System.out.println(i);
+      }
+    }
+
+    // 3. Word reversed
+    String word = "racecar";
+    String wordReversed = "";
+    for (int i = word.length()-1; i >= 0; i--) {
+      wordReversed += word.charAt(i);
+    }
+    System.out.println(wordReversed);
+  }
+}
