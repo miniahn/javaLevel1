@@ -1,0 +1,13 @@
+An array is an ordered list of elements, which can be things like integers, double, booleans, or strings.
+
+In Java, when we create an array, we have to tell the computer up front how many elements the array will have room for. Show the student how to create an array in Java with: int[] arr = new int[10];.
+
+Show the student how to get and set the value of an element of a list (e.g. arr[0]) and how to loop through the elements in a list (particularly using arr.length in our loop) and update each element.
+
+In order to print an array in Java, we can't simply call System.out.println(arr) (which prints a memory address). We have to loop through the array and print the elements one by one!
+
+A shortcut for creating an array where we already know which elements we want to put into the array is: int[] arr = {1,2,3}.
+
+Go through as many examples as needed, in particular how to work with arrays storing elements other than ints.
+
+Note that in Java, arrays of integers a pre-initialized to 0s, arrays of doubles are pre-initialized to 0.0s, arrays of booleans are pre-initialized to false, and arrays of Strings are pre-initialized to null.
