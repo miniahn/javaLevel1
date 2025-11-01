@@ -1,0 +1,40 @@
+Create a high score list! Every time a new score is entered, insert it into the correct position. The list should be sorted from biggest to smallest.
+
+The original list can either start out empty, or be initialized with hardcoded values. If there are values to begin with, make sure that they are sorted correctly!
+
+
+
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+
+    // original sorted highscore list
+    ArrayList<Integer> highscores = new ArrayList<>();
+    highscores.add(500);
+    highscores.add(450);
+    highscores.add(375);
+    System.out.println("\nHighscores:\n"+highscores);
+
+    // add highscores forever
+    Scanner scanner = new Scanner(System.in);
+    while(true){
+      System.out.print("Enter a new highscore: ");
+      int score = scanner.nextInt();
+      insertScore(score, highscores);
+      System.out.println("\nHighscores:\n"+highscores);
+    }
+
+  }
+
+  //insert a score into the given list
+  public static void insertScore(int score, List<Integer> highscores){
+    for(int i = 0; i < highscores.size(); i++){
+      if(score > highscores.get(i)){
+        highscores.add(i, score);
+        return;
+      }
+    }
+    // add to the end if it can't be inserted earlier
+    highscores.add(score);
+  }
+}
