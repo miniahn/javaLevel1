@@ -1,0 +1,56 @@
+Create a program that prints out a 10x10 grid and continuously asks the user to pick a row index and a column index and places an x in that position. 
+The user can use this program to draw a pattern, like a heart or a smiley face, in the grid. The program should print out the updated grid each time, and it should stop when the user enters -1.
+
+You may need to show the student how to use s.nextInt(); for the Scanner object to read in an integer input from the user.
+
+For bonus, the student can print out the row and column indices with the grid to make the drawer easier to use.
+They can also have the program ask the user at the beginning for the dimensions of the grid.
+
+
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    boolean[][] grid = new boolean[10][10];
+    Scanner s = new Scanner(System.in);
+
+    while(true) {
+      printGrid(grid);
+
+      System.out.println("Which row do you want to draw in? (To stop drawing, enter -1)");
+      int row = s.nextInt();
+
+      System.out.println("Which column do you want to draw in? (To stop drawing, enter -1)");
+      int col = s.nextInt();
+
+      if (row == -1 || col == -1) {
+        break;
+      }
+
+      grid[row][col] = true;
+    }
+  }
+
+  public static void printGrid(boolean[][] grid) {
+    System.out.print("  ");
+    for (int i = 0; i < grid.length; i++) {
+      System.out.print(i + " ");
+    }
+    System.out.println();
+
+    for(int i = 0; i < grid.length; i++){
+      System.out.print(i + " ");
+
+      for(int j = 0; j< grid[0].length; j++){
+        if(grid[i][j] == true){
+          System.out.print("x" + " ");
+        }
+        else{
+          System.out.print("-" + " ");
+        }
+      }
+      System.out.println();
+    }
+  }
+}
