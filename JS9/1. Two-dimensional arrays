@@ -1,0 +1,7 @@
+A two-dimensional array represents a grid of values. Another way to think about it is an array of arrays.
+
+When we create a two-dimensional array in Java, similar to creating a one-dimensional array, we have to tell the computer how many rows and how many columns we want to make room for.
+  Show the student how to create a two-dimensional array in Java with: int[][] arr = new int[10][5];.
+  
+Show the student how to traverse through a two-dimensional array with a nested for loop and with a for-each loop.
+  Make sure to point out the difference between arr.length (i.e. number of rows) and arr[0].length (i.e. number of columns).
