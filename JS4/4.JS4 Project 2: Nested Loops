@@ -1,0 +1,63 @@
+1. Use a loop to print out the numbers 1 to 12 in one line (you may have to remind the student how to use System.out.print(). Then, print out the multiples of 2 up to 24 in one line. Then, print out all the multiples of 3 up to 36 in one line.
+2. What if we wanted to print out all of the multiples, up to 12? Explain to the student how we can nest for loops inside each other. Use a nested for loop to print the 12x12 multiplication table. What would we have to change to print the 20x20 multiplication table?
+3. Use nested loops to print out this pattern:
+*
+**
+***
+****
+*****
+
+4. Use nested loops to print out the pattern in reverse:
+*****
+****
+***
+**
+*
+
+5. Use nested loops (and conditionals!) to print out this pattern:
+*----
+-*---
+--*--
+---*-
+----*
+
+
+
+class Main {
+  public static void main(String[] args) {
+    // Multiplication table
+    for (int i = 1; i <= 12; i++) {
+      for (int j = 1; j <= 12; j++) {
+        System.out.print(i*j + " ");
+      }
+      System.out.println();
+    }
+
+    // Star pattern
+    for (int i = 1; i <= 5; i++) {
+      for (int j = 1; j <= i; j++) {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+
+    for (int i = 5; i >= 1; i--) {
+      for (int j = 1; j <= i; j++) {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+
+    // Diagonal pattern
+    for (int i = 0; i < 5; i++) {
+      for (int j = 0; j < 5; j++) {
+        if (i == j) {
+          System.out.print("*");
+        } else {
+          System.out.print("-");
+        }
+      }
+      System.out.println();
+    }
+  }
+}
