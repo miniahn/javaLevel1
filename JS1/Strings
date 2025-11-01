@@ -1,0 +1,12 @@
+Strings are sequences of characters, or words. Unlike the variable types we have just learned about, Strings are not primitive variables in Java. 
+They are called objects. We will learn more about objects later, but for now just know that objects usually have more functionality than primitives, and we have to capitalize the class they belong to (like String).
+
+Have the student initialize a String variable with String word = "hello";. Then, have the student print out the string: System.out.println(word);.
+
+Strings have built-in methods - for now, think of these as operations you can perform on strings. Have the student try printing out word.length() and word.charAt(0) and figuring out what these methods do.
+
+String concatenation is when we want to combine a string with another variable by using the + symbol between strings and variables. For example, String name = "Bob"; System.out.println("My name is " + name);.
+Have the student try writing the code that will output [word] has [num] characters. and The first letter of [word] is [letter]..
+
+A substring is a contiguous sequences of characters inside of a string. Show the student word.substring(startIndex, endIndex).
+Make sure they understand that the end index is non-inclusive, so we only get the the substring that starts at the start index and ends at one position before the end index.
