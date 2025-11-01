@@ -1,0 +1,34 @@
+Have the computer pick a random lowercase letter. Ask the user to guess the letter. Keep asking until the user guesses correctly. 
+At the end, print out how many guesses it took for the user to guess the letter correctly.
+
+One tricky thing in this project is that we are storing our letter as a char, and when we call in.nextLine() to read in the user's guess, it reads in a String.
+Show the student how to use line.charAt(0) to get the character out of the user's input.
+
+
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    int n = (int)(Math.random()*26+97);
+    char letter = (char)n;
+
+    Scanner in = new Scanner(System.in);
+    int numGuesses = 0;
+
+    while (true) {
+      System.out.print("Guess a random letter (lowercase)! ");
+      String line = in.nextLine();
+      char guess = line.charAt(0);
+      numGuesses++;
+
+      if (guess == letter) {
+        System.out.println("You got it! It took you " + numGuesses + " guesses to guess correctly.");
+        break;
+      } else {
+        System.out.println("That\'s not it!");
+      }
+    }
+
+  }
+}
