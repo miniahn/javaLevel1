@@ -1,0 +1,23 @@
+Reference Code: https://replit.com/@JuniLearning/JS1-Casting-Reference
+  Have the student create a Custom Project (a blank project) to store their reference code for the topics you are about to introduce. 
+
+Casting tells the computer to treat a variable as a different type.
+  Have the student think of an example of when the variable type would need to change. One example might be rounding a double.
+
+Sometimes, the computer performs casting automatically. For example, when we add an integer and a double together, it will result in a double,
+because the computer automatically casts the integer to a double before adding.
+  Have the student create an integer one and a double half and sum the two variables to create a variable double onePointFive.
+  Then, print out the value of onePointFive.
+
+In most cases, however, we need to explicitly specify the new type. We cast a variable by specifying the new type the variable should be considered as in parentheses before the name of the variable.
+  Let’s try casting onePointFive to an integer. Have the student print out (int) onePointFive. What happens? When we cast a double to an integer, it always rounds down to the nearest integer.
+  Have the student cast one to a double. What happens?
+
+Note that as with normal order of operations, parentheses take precedence, so (int) num / otherNum will not always produce the same result as (int) (num/otherNum).
+Have the student experiment with their code to understand what results in these cases:
+  When two integers are divided
+  When a double is divided by an integer
+  When two integers are divided and then cast to a double
+    
+Forcing the computer to treat a variable differently can result in a loss of information.
+  Have the student try running int newNumber = half. Why is there an error?
