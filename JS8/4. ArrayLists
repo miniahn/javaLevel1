@@ -1,0 +1,11 @@
+Arrays are helpful, but they have a lot of limitations.
+  For example, we can’t change the size of an array after we create it, and there are no built in methods for inserting, deleting, or printing elements.
+  If we wanted to insert or delete an element, we would have to manually shift all the necessary elements.
+
+ArrayLists were built to solve these problems.
+  ArrayLists have no fixed length and they have methods for insertion, deletion, and printing.
+  In order to use ArrayLists we have to import them into our project by typing: import java.util.ArrayList;
+
+ArrayLists must contain objects instead of primitive types (int, double, boolean, etc.). If we want to store these primitive types we can use the corresponding wrapper object.
+
+use add(), get(), set(), and remove()
