@@ -1,0 +1,14 @@
+A method is a block of code that takes in a specific set of inputs, performs a set of operations, and can return an output.
+Commonly these are called functions in other programming languages. Methods let us run specific code repeatedly without having to rewrite the code!
+
+Show the student an example of a method sum() which takes in two integers and returns their sum: public static int sum(int x, int y) { return x+y; }.
+Note that for now, we will define our methods inside of the Main class, but outside of the main() method.
+
+The method parameters (in the example, int x, int y) are the required inputs for the method. Note that they must be defined with a specified type.
+
+The method declaration must also include the type of the output that is returned (in the example, int). If the method does not return anything, then the return type is void.
+
+When we use this method in our code, we are calling the method. Call the method in our main() method. You can use a loop and call the method multiple times to demonstrate how methods give us reusable code.
+
+Have the student practice defining and calling several methods, like subtract(x,y), double(n) (double the integer n),
+and max(x,y) (find the maximum of x and y). Feel free to make up more simple methods (there is more methods practice in JS6 Project 2).
